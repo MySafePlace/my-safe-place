@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'my-safe-place',
+    title: 'My Safe Place',
     htmlAttrs: {
       lang: 'en',
     },

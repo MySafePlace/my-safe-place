@@ -1,6 +1,10 @@
-# my-safe-place
+# MySafePlace | ChatBot
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/6c2e0ba3-245f-4b45-b8b4-10b69db65d72/deploy-status)](https://app.netlify.com/sites/my-safe-place/deploys)
+
+## Descripción
+
+PRY20220138: Chatbot que brinda un apoyo psicológico a las víctimas de violencia contra la mujer.
 
 ## Build Setup
 

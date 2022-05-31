@@ -1,5 +1,7 @@
 # my-safe-place
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6c2e0ba3-245f-4b45-b8b4-10b69db65d72/deploy-status)](https://app.netlify.com/sites/my-safe-place/deploys)
+
 ## Build Setup
 
 ```bash

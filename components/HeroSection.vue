@@ -1,5 +1,5 @@
 <template>
-  <section class="text-gray-400 bg-gray-900 body-font">
+  <section class="text-gray-400 bg-secondary body-font">
     <div
       class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
     >
@@ -18,7 +18,7 @@
         </p>
         <div class="flex justify-center">
           <button
-            class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            class="inline-flex text-white bg-tangerine border-0 py-2 px-6 focus:outline-none rounded text-lg hover:bg-tangerine-dark"
           >
             Ingresar al Chat
             <svg

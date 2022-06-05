@@ -13,7 +13,7 @@
       >
         <div class="flex flex-col mb-10 lg:items-start items-center">
           <div
-            class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"
+            class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-secondary text-tangerine mb-5"
           >
             <svg
               fill="none"
@@ -35,7 +35,7 @@
               Blue bottle crucifix vinyl post-ironic four dollar toast vegan
               taxidermy. Gastropub indxgo juice poutine.
             </p>
-            <a class="mt-3 text-indigo-500 inline-flex items-center"
+            <a class="mt-3 text-tangerine inline-flex items-center"
               >Learn More
               <svg
                 fill="none"
@@ -53,7 +53,7 @@
         </div>
         <div class="flex flex-col mb-10 lg:items-start items-center">
           <div
-            class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"
+            class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-secondary text-tangerine mb-5"
           >
             <svg
               fill="none"
@@ -79,7 +79,7 @@
               Blue bottle crucifix vinyl post-ironic four dollar toast vegan
               taxidermy. Gastropub indxgo juice poutine.
             </p>
-            <a class="mt-3 text-indigo-500 inline-flex items-center"
+            <a class="mt-3 text-tangerine inline-flex items-center"
               >Learn More
               <svg
                 fill="none"
@@ -97,7 +97,7 @@
         </div>
         <div class="flex flex-col mb-10 lg:items-start items-center">
           <div
-            class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5"
+            class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-secondary text-tangerine mb-5"
           >
             <svg
               fill="none"
@@ -120,7 +120,7 @@
               Blue bottle crucifix vinyl post-ironic four dollar toast vegan
               taxidermy. Gastropub indxgo juice poutine.
             </p>
-            <a class="mt-3 text-indigo-500 inline-flex items-center"
+            <a class="mt-3 text-tangerine inline-flex items-center"
               >Learn More
               <svg
                 fill="none"

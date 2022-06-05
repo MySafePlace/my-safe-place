@@ -1,5 +1,5 @@
 <template>
-  <header class="text-gray-600 body-font">
+  <header class="text-gray-500 body-font">
     <div
       class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
     >
@@ -12,11 +12,11 @@
         <a class="hover:text-gray-900">Contacto</a>
       </nav>
       <a
-        class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0"
+        class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-secondary lg:items-center lg:justify-center mb-4 md:mb-0"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+          class="w-10 h-10 text-white p-2 bg-tangerine rounded-full"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -28,12 +28,12 @@
             d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
           />
         </svg>
-        <span class="ml-3 text-xl">MySafePlace</span>
+        <span class="ml-3 text-xl font-semibold">MySafePlace</span>
       </a>
       <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
         <nuxt-link
           to="/chat"
-          class="inline-flex items-center bg-indigo-500 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-400 rounded text-white mt-4 md:mt-0"
+          class="inline-flex items-center bg-secondary border-0 py-1 px-3 focus:outline-none hover:bg-indigo-400 rounded text-white mt-4 md:mt-0"
         >
           Ingresar al Chat
           <svg

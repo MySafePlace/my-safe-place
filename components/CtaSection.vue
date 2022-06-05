@@ -1,5 +1,5 @@
 <template>
-  <section class="text-gray-400 bg-gray-900 body-font">
+  <section class="text-gray-400 bg-secondary body-font">
     <div class="container px-5 py-24 mx-auto">
       <div
         class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto"
@@ -11,7 +11,7 @@
           sriracha forage.
         </h1>
         <button
-          class="flex-shrink-0 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-10 sm:mt-0"
+          class="flex-shrink-0 text-white bg-tangerine border-0 py-2 px-8 focus:outline-none rounded text-lg mt-10 sm:mt-0"
         >
           Button
         </button>

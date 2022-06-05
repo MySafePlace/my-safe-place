@@ -8,7 +8,7 @@
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+          class="w-10 h-10 text-white p-2 bg-tangerine rounded-full"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -25,19 +25,12 @@
       <p
         class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
       >
-        © 2022 Tailblocks —
-        <a
-          href="https://twitter.com/knyttneve"
-          class="text-gray-600 ml-1"
-          rel="noopener noreferrer"
-          target="_blank"
-          >@knyttneve</a
-        >
+        © 2022 MySafePlace. Todos los derechos reservados.
       </p>
       <span
         class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
       >
-        <a class="text-gray-500">
+        <a class="text-secondary">
           <svg
             fill="currentColor"
             stroke-linecap="round"
@@ -51,7 +44,7 @@
             ></path>
           </svg>
         </a>
-        <a class="ml-3 text-gray-500">
+        <a class="ml-3 text-secondary">
           <svg
             fill="currentColor"
             stroke-linecap="round"
@@ -65,7 +58,7 @@
             ></path>
           </svg>
         </a>
-        <a class="ml-3 text-gray-500">
+        <a class="ml-3 text-secondary">
           <svg
             fill="none"
             stroke="currentColor"
@@ -81,7 +74,7 @@
             ></path>
           </svg>
         </a>
-        <a class="ml-3 text-gray-500">
+        <a class="ml-3 text-secondary">
           <svg
             fill="currentColor"
             stroke="currentColor"

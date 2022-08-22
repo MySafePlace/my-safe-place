@@ -7,13 +7,12 @@
         <h1
           class="flex-grow sm:pr-16 text-2xl font-medium title-font text-white"
         >
-          Slow-carb next level shoinddgoitch ethical authentic, scenester
-          sriracha forage.
+          Ayúdanos a seguir ayudando a sobrevientes de la violencia doméstica
         </h1>
         <button
           class="flex-shrink-0 text-white bg-tangerine border-0 py-2 px-8 focus:outline-none rounded text-lg mt-10 sm:mt-0"
         >
-          Button
+          Donar
         </button>
       </div>
     </div>

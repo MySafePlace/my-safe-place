@@ -1,36 +1,32 @@
 <template>
-  <footer class="text-gray-600 body-font">
+  <footer class="mt-10 text-gray-600 bg-gradient-to-r from-linearfrom2 to-linearto2 body-font">
     <div
       class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
     >
       <a
         class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="w-10 h-10 text-white p-2 bg-tangerine rounded-full"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          stroke-width="2"
+        <div 
+        class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-white"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-          />
-        </svg>
-        <span class="ml-3 text-xl">MySafePlace</span>
+        <img
+            alt="logo"
+            src="../components/assets/logo.png"
+            width="30"
+            height="30"
+            />
+        </div>
+        <span class="ml-3 text-xl text-white">Saviour Care</span>
       </a>
       <p
-        class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+        class="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
       >
         © 2022 MySafePlace. Todos los derechos reservados.
       </p>
       <span
         class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
       >
-        <a class="text-secondary">
+        <a class="text-white">
           <svg
             fill="currentColor"
             stroke-linecap="round"
@@ -44,7 +40,7 @@
             ></path>
           </svg>
         </a>
-        <a class="ml-3 text-secondary">
+        <a class="ml-3 text-white">
           <svg
             fill="currentColor"
             stroke-linecap="round"
@@ -58,7 +54,7 @@
             ></path>
           </svg>
         </a>
-        <a class="ml-3 text-secondary">
+        <a class="ml-3 text-white">
           <svg
             fill="none"
             stroke="currentColor"
@@ -74,7 +70,7 @@
             ></path>
           </svg>
         </a>
-        <a class="ml-3 text-secondary">
+        <a class="ml-3 text-white">
           <svg
             fill="currentColor"
             stroke="currentColor"

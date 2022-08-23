@@ -1,19 +1,20 @@
 <template>
-  <section class="text-gray-400 bg-secondary body-font">
-    <div class="container px-5 py-24 mx-auto">
+  <section class="mx-40 text-gray-400 bg-gradient-to-r from-linearfrom1 to-linearto1 body-font rounded-lg">
+    <div class="container px-10 py-24 mx-auto">
       <div
-        class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto"
+        class="lg:w-1/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto"
       >
         <h1
-          class="flex-grow sm:pr-16 text-2xl font-medium title-font text-white"
+          class="flex-grow sm:pr-16 text-3xl font-medium title-font text-white"
         >
-          Ayúdanos a seguir ayudando a sobrevientes de la violencia doméstica
+          ¿Qué opinan nuestros usuarios sobre nosotros?
         </h1>
-        <button
-          class="flex-shrink-0 text-white bg-tangerine border-0 py-2 px-8 focus:outline-none rounded text-lg mt-10 sm:mt-0"
+        
+      </div>
+      <div 
+        class="my-8 w-56 h-2 justify-self-center bg-white"
         >
-          Donar
-        </button>
+        
       </div>
     </div>
   </section>

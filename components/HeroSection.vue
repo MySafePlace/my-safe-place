@@ -8,16 +8,13 @@
       >
         <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-txt1">
           Estamos para ayudarte, no estás sola
-          <!--
-		  <br class="hidden lg:inline-block" />
-		  -->
         </h1>
         <p class="mb-8 leading-relaxed text-txt2">
           ¿Necesitas ayuda? Aquí estamos para apoyarte en lo que necesites.
         </p>
         <div class="flex justify-center">
           <button
-            class="inline-flex text-white bg-btn1 border-0 py-2 px-6 focus:outline-none rounded text-lg hover:bg-tangerine-dark"
+            class="inline-flex text-white bg-btn1 border-5 py-2 px-6 focus:outline-blue rounded-full text-lg "
           >
             Empezar
             

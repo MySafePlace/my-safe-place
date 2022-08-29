@@ -1,5 +1,5 @@
 <template>
-  <header class="text-gray-500 body-font">
+  <header class="sticky top-0 bg-txt2 text-gray-500 body-font">
     <div
       class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
     >
@@ -19,13 +19,11 @@
         <span class="ml-3 text-xl font-semibold text-title">MySafePlace</span>
       </a>
       <nav class="flex lg:w-5/5 flex-wrap items-center text-base md:ml-auto">
-        <nuxt-link to="/" class="mr-10 text-txtnav">Inicio</nuxt-link>
-        <nuxt-link to="/chat" class="mr-10 text-txtnav">Estadísticas</nuxt-link>
-        <a class="mr-10 text-txtnav">Comentarios</a>
-        <nuxt-link to="/team" class="mr-10 text-txtnav"
-          >Sobre Nosotros</nuxt-link
-        >
-        <a class="mr-10 text-txtnav">Contáctenos</a>
+        <a href="#inicio" class="mr-10 text-txtnav">Inicio</a>
+        <a href="#estadisticas" class="mr-10 text-txtnav">Estadísticas</a>
+        <a href="#comentarios" class="mr-10 text-txtnav">Comentarios</a>
+        <a href="#sobrenosotros" class="mr-10 text-txtnav">Sobre Nosotros</a>
+        <a href="#contactenos" class="mr-10 text-txtnav">Contáctenos</a>
       </nav>
     </div>
   </header>

@@ -1,7 +1,10 @@
 <template>
   <div>
     <PageHeader />
-    <Nuxt />
+    <HeroSection/>
+    <FeaturesSection/>
+    <StatisticsSection/>
+    <CtaSection/>
     <script>
       window.watsonAssistantChatOptions = {
         integrationID: 'bc3f38f3-f50f-499c-9f6c-fb813be47da2', // The ID of this integration.
@@ -25,6 +28,12 @@
 </template>
 
 <script>
+import HeroSection from '~/components/HeroSection.vue';
+import FeaturesSection from '~/components/FeaturesSection.vue';
+import StatisticsSection from '~/components/StatisticsSection.vue';
+import CtaSection from '~/components/CtaSection.vue';
+
 export default {
-  name: 'DefaultLayout',
+    name: "DefaultLayout",
+    components: { HeroSection, FeaturesSection, StatisticsSection, CtaSection }
 }

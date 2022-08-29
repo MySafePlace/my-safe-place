@@ -1,5 +1,5 @@
   <template>
-  <section class="text-gray-400 body-font">
+  <section id="inicio" class="text-gray-400 body-font">
     <div
       class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
     >

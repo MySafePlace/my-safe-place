@@ -1,6 +1,6 @@
 <template>
   <section class="text-gray-400 body-font">
-    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div  id="sobrenosotros" class="container px-5 py-24 mx-auto flex flex-wrap">
       <div
         class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10"
       >
@@ -33,7 +33,7 @@
     </div>
 
 
-    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div id="contactenos" class="container px-5 py-24 mx-auto flex flex-wrap">
       <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
         <img
             alt="image5"

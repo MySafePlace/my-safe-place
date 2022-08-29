@@ -1,10 +1,12 @@
 <template>
   <section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div id="estadisticas" class="container px-5 py-24 mx-auto flex flex-wrap">
       <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
         <img
             alt="image2"
             src="../components/assets/image2.png"
+            width="408"
+            height="624"
             />
       </div>
       <div
@@ -23,7 +25,7 @@
       </div>
     </div>
 
-    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div id="comentarios" class="container px-5 py-24 mx-auto flex flex-wrap">
       <div
         class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0"
       >

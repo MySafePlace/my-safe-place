@@ -9997,6 +9997,11 @@
     "portfinder" "^1.0.26"
     "replace-in-file" "^6.1.0"
 
+"tailwind-scroll-behavior@^1.0.0":
+  "integrity" "sha512-0Tu+XQZUf4Cla53p3Yb1247SsoJcU4/5a5bs6SmrkXdsQn8rcuIc6gb5k2UFrIo2/nvmTjKplF4AHQcfEwCCNQ=="
+  "resolved" "https://registry.npmjs.org/tailwind-scroll-behavior/-/tailwind-scroll-behavior-1.0.0.tgz"
+  "version" "1.0.0"
+
 "tailwindcss@^2.2.2":
   "integrity" "sha512-6Ui7JSVtXadtTUo2NtkBBacobzWiQYVjYW0ZnKaP9S1ZCKQ0w7KVNz+YSDI/j7O7KCMHbOkz94ZMQhbT9pOqjw=="
   "resolved" "https://registry.npmjs.org/tailwindcss/-/tailwindcss-2.2.19.tgz"

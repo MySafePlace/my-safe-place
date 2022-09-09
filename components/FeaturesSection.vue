@@ -97,7 +97,7 @@ export default {
       grid-template-rows: 40rem 1fr;
     }
     &__picture{
-      height: 100%;
+      height: 60rem;
       @media (max-width: "768px") {
         justify-self: center;  
         height: 40rem;

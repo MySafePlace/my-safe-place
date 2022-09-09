@@ -1,64 +1,36 @@
 <template>
-  <section class="text-gray-400 body-font">
-    <div  id="sobrenosotros" class="container px-5 py-24 mx-auto flex flex-wrap">
-      <div
-        class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10"
-      >
-        <div class="w-full sm:p-4 px-4 mb-6">
-          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-aux1txt1">
-            Sobre Nosotros
-          </h1>
-          <div 
-        class="my-8 w-56 h-2 items-center justify-center bg-aux1txt1"
-        >
-      </div>
-          <div class="leading-relaxed text-txt3">
-            Somos “My Safe Place”, la cual tiene como propósito brindar apoyo psicológico a las mujeres que han sido violentadas...
-          </div>
-      </div>
-      <button
-            class="ml-4 inline-flex text-txtbtn2 py-2 px-6 border border-txtbtn2 focus:outline-none rounded-full text-lg"
-          >
-            Más información
-      </button>
-      </div>
-      <div
-        class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0"
-      >
-        <img
-          alt="image4"
-          src="../components/assets/image4.png"
-        />
+  <section class="features">
+    <div id="sobrenosotros" class="features__information">
+      <img
+        class="features__information__picture"
+        alt="image4"
+        src="../components/assets/image4.png"
+      />
+      <div class="features__information__content">
+        <h1 class="features__information__content__title text-6xl">
+          Sobre Nosotros
+        </h1>
+        <div class="features__information__content__line w-60 h-2"></div>
+        <div class="text-xl text-justify">
+          Somos “My Safe Place”, la cual tiene como propósito brindar apoyo psicológico a las mujeres que han sido violentadas...
+        </div>
       </div>
     </div>
-
-
-    <div id="contactenos" class="container px-5 py-24 mx-auto flex flex-wrap">
-      <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-        <img
-            alt="image5"
-            src="../components/assets/image5.png"
-            />
-      </div>
-      <div
-        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
-      >
-        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-aux2txt1">
-          Contáctenos      
-      <div 
-        class="my-8 w-56 h-2 items-center justify-center bg-aux2txt1"
-        >
-      </div>
+    <div id="contactenos" class="features__contact">
+      <div class="features__contact__content">
+        <h1 class="features__contact__content__title text-txt1 text-6xl">
+          Contáctenos
         </h1>
-        <p class="mb-8 leading-relaxed text-txt3">
+        <div class="features__contact__content__line w-60 h-2"></div>
+        <div class="text-xl text-justify">
           Para mayor información, sírvase contactarnos dándole clic al botón de a continuación
-        </p>
-        <button
-            class=" inline-flex text-txtbtn3 py-2 px-6 border border-txtbtn3 focus:outline-none rounded-full text-lg"
-          >
-            Contáctanos
-      </button>
+        </div>
       </div>
+      <img
+        class="features__contact__picture"
+        alt="image5"
+        src="../components/assets/image5.png"
+      />
     </div>
   </section>
 </template>
@@ -68,3 +40,80 @@ export default {
   name: 'StatisticsSection',
 }
 </script>
+
+<style lang="scss">
+  .features{
+    height: auto;
+    padding: 0 calc(var(--x-padding));
+    &__information{
+      height: 40rem;
+      display: grid;
+      align-items: center;
+      gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+      @media (max-width: "768px") {
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30rem 1fr;
+      }
+      &__picture{
+        @media (max-width: "768px") {
+          justify-self: center;
+          height: 30rem;
+        }
+      }
+      &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        &__title{
+          font-weight: bold;
+          color: rgb(70,46,106);
+        }
+        &__line{
+          background-color: rgba(70,46,106, 1);
+        }
+        &__text{
+          color: #555;
+        }
+      }
+    }
+    &__contact{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      height: 40rem;
+      gap: 2rem;
+      @media (max-width: "768px") {
+        padding: 5rem 0;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 20rem;
+      }
+      &__picture{
+        @media (max-width: "768px") {
+          justify-self: center;
+          height: 20rem;
+        }
+      }
+      &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.6rem;
+        &__title{
+          font-weight: bold;
+          color: rgb(131,217,236);
+        }
+        &__line{
+          background-color: rgba(131,217,236, 1);
+        }
+        &__text{
+          color: #555;
+        }
+      }
+    }
+  }
+
+  </style>

@@ -1,32 +1,22 @@
-  <template>
-  <section id="inicio" class="text-gray-400 body-font">
-    <div
-      class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
-    >
-      <div
-        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
-      >
-        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-txt1">
-          Estamos para ayudarte, no estás sola
-        </h1>
-        <p class="mb-8 leading-relaxed text-txt2">
-          ¿Necesitas ayuda? Aquí estamos para apoyarte en lo que necesites.
-        </p>
-        <div class="flex justify-center">
-          <button
-            class="inline-flex text-white bg-btn1 border-5 py-2 px-6 focus:outline-blue rounded-full text-lg "
-          >
-            Empezar
-            
-          </button>
-        </div>
-      </div>
-      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-        <img
-            alt="image1"
-            src="../components/assets/image1.png"
-            />
-      </div>
+<template>
+  <section id="inicio" class="hero">
+    <div class="hero__content">
+      <h1 class="hero__content__title text-6xl font-bold text-txt2">
+        Estamos para ayudarte, no estás sola
+      </h1>
+      <p class="hero__content__text text-2xl">
+        ¿Necesitas ayuda? Aquí estamos para apoyarte en lo que necesites.
+      </p>
+      <button class="hero__content__button text-white rounded-full text-xl" @click="openChat" >
+          Empezar 
+      </button>
+    </div>
+    <div class="hero__container">
+      <img
+        class="hero__container__img"
+        alt="image1"
+        src="../components/assets/image1.png"
+        />
     </div>
   </section>
 </template>
@@ -36,3 +26,48 @@ export default {
   name: 'HeroSection',
 }
 </script>
+
+<style lang="scss">
+.hero{
+  padding: var(--y-header) calc(var(--x-padding)) 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  height: 48rem;
+  gap: 3.6rem;
+  @media (max-width: "768px") {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  &__content{
+    display: flex;
+    gap: 1.6rem;
+    flex-direction: column;
+    align-items: flex-start;
+    @media (max-width: "768px") {
+      align-items: center;
+    }
+    &__button{
+      padding: 1rem 3rem;
+      background-color: #9C89B8;
+      transition: 1s;
+      &:hover{
+        background-color: #F0A6CA;
+      }
+    }
+    &__text{
+      color: #555;
+    }
+  }
+  &__container{
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width: "768px") {
+      display: none;
+    }
+    &__img{
+      width: 90%;
+    }
+  }
+}
+</style>

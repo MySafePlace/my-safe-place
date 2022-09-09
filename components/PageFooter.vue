@@ -1,67 +1,53 @@
 <template>
-  <footer class="mt-10 text-gray-600 bg-gradient-to-r from-linearfrom2 to-linearto2 body-font">
-    <div
-      class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
-    >
-      <a
-        class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
-      >
-        <div 
-        class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-white"
+  <footer class="footer">
+    <section class="footer__logo">
+      <img
+        class="footer__logo__img"
+          alt="logo"
+          src="../components/assets/logo.png"
+          />
+      <span class="ml-3 text-2xl">Saviour Care</span>
+    </section>
+    <p class="text-l">
+      © 2022 MySafePlace. Todos los derechos reservados.
+    </p>
+    <span class="inline-flex ">
+      <a class="text-white">
+        <svg
+          fill="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          class="w-8 h-8"
+          viewBox="0 0 24 24"
         >
-        <img
-            alt="logo"
-            src="../components/assets/logo.png"
-            width="30"
-            height="30"
-            />
-        </div>
-        <span class="ml-3 text-xl text-white">Saviour Care</span>
+          <path
+            d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+          ></path>
+        </svg>
       </a>
-      <p
-        class="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
-      >
-        © 2022 MySafePlace. Todos los derechos reservados.
-      </p>
-      <span
-        class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
-      >
-        <a class="text-white">
-          <svg
-            fill="currentColor"
+      <a class="ml-3 text-white">
+        <svg
+          fill="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          class="w-8 h-8"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+          ></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-white">
+        <svg
+          fill="none"
+          stroke="currentColor"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
-            class="w-5 h-5"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
-            ></path>
-          </svg>
-        </a>
-        <a class="ml-3 text-white">
-          <svg
-            fill="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-5 h-5"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
-            ></path>
-          </svg>
-        </a>
-        <a class="ml-3 text-white">
-          <svg
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-5 h-5"
+            class="w-8 h-8"
             viewBox="0 0 24 24"
           >
             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
@@ -77,7 +63,7 @@
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="0"
-            class="w-5 h-5"
+            class="w-8 h-8"
             viewBox="0 0 24 24"
           >
             <path
@@ -88,7 +74,6 @@
           </svg>
         </a>
       </span>
-    </div>
   </footer>
 </template>
 
@@ -97,3 +82,41 @@ export default {
   name: 'PageFooter',
 }
 </script>
+
+<style lang="scss">
+.footer{
+    width: 100%;
+    height: var(--y-header);
+    background: rgb(208,176,225);
+    background: linear-gradient(90deg, rgba(208,176,225,1) 0%, rgba(170,208,255,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--x-padding);
+    color: white;
+    @media (max-width: "768px") {
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.8rem;
+      height: 15rem;
+    }
+    &__logo {
+      width: auto;
+      display: flex;
+      align-items: center;
+      color: white;
+      &__img{
+        background-color: #efefef;
+        padding: 1rem;
+        border-radius: 2.5rem;
+      }
+    }
+    a{
+      transition: 0.4s;
+      cursor: pointer;
+      &:hover{
+        color: #462e6a;
+      }
+    }
+}
+</style>

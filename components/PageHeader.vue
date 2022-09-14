@@ -7,6 +7,9 @@
           src="../components/assets/logo.png"
           />
         <span class="text-3xl ml-4 font-semibold">MySafePlace</span>
+        <div class="menu-btn" @click="toggleMenu">
+          <div class="menu-btn__burger" @click="toggleMenu"></div>
+        </div>
     </section>
     <nav class="header__nav text-2xl">
       <a href="#inicio" class="header__nav__ancle">Inicio</a>
@@ -19,8 +22,32 @@
 </template>
 
 <script>
+
 export default {
   name: 'PageHeader',
+  data(){
+    return {
+      menuOpen: false,
+    }
+  },
+  methods: {
+    toggleMenu(){
+      const menuBtn = document.querySelector('.menu-btn');
+      const nav = document.querySelector('.header__nav');
+      const headerAll = document.querySelector('.header');
+      if(!this.menuOpen) {
+        menuBtn.classList.add('open');
+        this.menuOpen = true;
+        nav.classList.add('active');
+        headerAll.classList.add('active');
+      } else {
+        menuBtn.classList.remove('open');
+        this.menuOpen = false;
+        nav.classList.remove('active');
+        headerAll.classList.remove('active');
+      }
+    }
+  }
 }
 </script>
 
@@ -39,9 +66,12 @@ export default {
       flex-direction: column;
       width: 100%;
       padding: 1.6rem var(--x-padding);
+      height: 8rem;
+      &.active{
+        height: var(--y-header);
+      }
     }
     @media (max-width: "540px") {
-      position: absolute;
     }
     &__logo {
       width: auto;
@@ -65,12 +95,25 @@ export default {
         gap: 1.6rem;
       }
       @media (max-width: "768px") {
+        display: none;
         gap: 2rem;
         width: 100%;
+        &.active{
+          animation: fadeIn 1.5s;
+          display: flex;
+        }
+        @keyframes fadeIn {
+          0% { opacity: 0; }
+          100% { opacity: 1; }
+        }
       }
       @media (max-width: "540px") {
-        display: grid;
+        display: none;
         grid-template-columns: repeat(2, 1fr);
+        &.active{
+          animation: fadeIn 0.5s;
+          display: grid;
+        }
       }
       &__ancle{
         transition: 0.4s;
@@ -87,4 +130,60 @@ export default {
       }
     }
   }
+
+.menu-btn {
+  display: none;
+  @media (max-width: "768px") {
+    display: flex;
+  }
+  position: fixed;
+  right: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  @media (max-width: "540px") {
+    right: 0;
+  }
+  /* border: 3px solid #fff; */
+  &__burger {
+    width: 50px;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 4px;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(255,101,47,.2);
+      transition: all .5s ease-in-out;
+    }
+    &::before {
+      transform: translateY(-16px);
+    }
+    &::after {
+      transform: translateY(16px);
+    }
+  }
+}
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
 </style>

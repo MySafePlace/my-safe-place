@@ -23,6 +23,7 @@ export default {
     font-family: 'Mulish', sans-serif;
     --x-padding: 15rem;
     --y-header: 8rem;
+    scroll-padding-top: var(--y-header);
     @media (max-width: "1024px") {
     --x-padding: 10rem;
     }

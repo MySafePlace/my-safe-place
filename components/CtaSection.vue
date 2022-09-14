@@ -20,7 +20,8 @@ export default {
 <style lang="scss">
   .comments{
     height: 20rem;
-    background-color: #8DBDFF;
+    background: rgb(208,176,225);
+    background: linear-gradient(90deg, rgba(208,176,225,1) 0%, rgba(170,208,255,1) 100%);
     border-radius: 5rem;
     margin: 2rem var(--x-padding) 10rem;
     padding: 2rem;

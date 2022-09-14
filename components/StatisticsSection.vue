@@ -69,10 +69,10 @@ export default {
         gap: 2rem;
         &__title{
           font-weight: bold;
-          color: rgb(70,46,106);
+          color: #bbc3ee;
         }
         &__line{
-          background-color: rgba(70,46,106, 1);
+          background-color: #bbc3ee;
         }
         &__text{
           color: #555;
@@ -89,12 +89,14 @@ export default {
         padding: 5rem 0;
         height: auto;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 20rem;
+        grid-template-rows: 20rem 1fr;
+        grid-template-areas: "Img" "Text";
       }
       &__picture{
         @media (max-width: "768px") {
           justify-self: center;
           height: 20rem;
+          grid-area: Img;
         }
       }
       &__content{
@@ -104,10 +106,10 @@ export default {
         gap: 1.6rem;
         &__title{
           font-weight: bold;
-          color: rgb(131,217,236);
+          color: #cab6e4;
         }
         &__line{
-          background-color: rgba(131,217,236, 1);
+          background-color: #cab6e4;
         }
         &__text{
           color: #555;

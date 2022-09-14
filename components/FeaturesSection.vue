@@ -126,9 +126,10 @@ export default {
     gap: 2rem;
     @media (max-width: "768px") {
       padding: 5rem 0;
-      height: 50rem;
+      height: 55rem;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 30rem;  
+      grid-template-rows: 30rem 1fr;  
+      grid-template-areas: "Img" "Text";
     }
     &__content{
       display: flex;
@@ -157,6 +158,7 @@ export default {
         @media (max-width: "768px") {
           justify-self: center;
           height: 30rem;
+          grid-area: Img;
         }
       }
   }

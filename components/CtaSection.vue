@@ -19,6 +19,7 @@ export default {
 
 <style lang="scss">
   .comments{
+    scroll-snap-align: start;
     height: 20rem;
     background: rgb(208,176,225);
     background: linear-gradient(90deg, rgba(208,176,225,1) 0%, rgba(170,208,255,1) 100%);

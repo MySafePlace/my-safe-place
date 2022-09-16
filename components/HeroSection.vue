@@ -29,15 +29,17 @@ export default {
 
 <style lang="scss">
 .hero{
+  scroll-snap-align: start;
   padding: var(--y-header) calc(var(--x-padding)) 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  height: 48rem;
+  height: calc(110vh - var(--y-header));
   gap: 3.6rem;
   @media (max-width: "768px") {
     grid-template-columns: 1fr;
     text-align: center;
+    height: 48rem;
   }
   &__content{
     display: flex;

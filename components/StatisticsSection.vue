@@ -46,7 +46,8 @@ export default {
     height: auto;
     padding: 0 calc(var(--x-padding));
     &__information{
-      height: 40rem;
+      scroll-snap-align: start;
+      height: calc(100vh - var(--y-header));
       display: grid;
       align-items: center;
       gap: 2rem;
@@ -80,10 +81,11 @@ export default {
       }
     }
     &__contact{
+      scroll-snap-align: start;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
-      height: 40rem;
+      height: calc(100vh - var(--y-header));
       gap: 2rem;
       @media (max-width: "768px") {
         padding: 5rem 0;

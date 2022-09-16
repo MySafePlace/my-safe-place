@@ -85,6 +85,7 @@ export default {
 
 <style lang="scss">
 .footer{
+    scroll-snap-align: end;
     width: 100%;
     height: var(--y-header);
     background: rgb(208,176,225);

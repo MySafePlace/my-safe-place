@@ -179,14 +179,14 @@ export default {
 }
 /* ANIMATION */
 .menu-btn.open .menu-btn__burger {
-  transform: translateX(-50px);
+  transform: translateX(50px);
   background: transparent;
   box-shadow: none;
 }
 .menu-btn.open .menu-btn__burger::before {
-  transform: rotate(45deg) translate(35px, -35px);
+  transform: rotate(45deg) translate(-35px, 35px);
 }
 .menu-btn.open .menu-btn__burger::after {
-  transform: rotate(-45deg) translate(35px, 35px);
+  transform: rotate(-45deg) translate(-35px, -35px);
 }
 </style>

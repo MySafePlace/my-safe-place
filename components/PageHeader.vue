@@ -7,8 +7,10 @@
           src="../components/assets/logo.png"
           />
         <span class="text-3xl ml-4 font-semibold">MySafePlace</span>
-        <div class="menu-btn" @click="toggleMenu">
-          <div class="menu-btn__burger" @click="toggleMenu"></div>
+        <div @click="toggleMenu" class="Burger-Container">
+          <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+          </div>
         </div>
     </section>
     <nav class="header__nav text-2xl">
@@ -130,14 +132,15 @@ export default {
       }
     }
   }
-
+.Burger-Container{
+  position: fixed;
+  right: 10px;
+}
 .menu-btn {
   display: none;
   @media (max-width: "768px") {
     display: flex;
   }
-  position: fixed;
-  right: 10px;
   justify-content: center;
   align-items: center;
   width: 80px;

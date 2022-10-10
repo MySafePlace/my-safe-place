@@ -149,9 +149,6 @@ export default {
   height: 40px;
   cursor: pointer;
   transition: all .5s ease-in-out;
-  @media (max-width: "540px") {
-    right: 0;
-  }
   /* border: 3px solid #fff; */
   &__burger {
     width: 50px;

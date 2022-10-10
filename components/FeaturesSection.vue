@@ -74,7 +74,6 @@ export default {
           console.log(data)
           this.fullname= "";
           this.comment= "";
-          alert("Se envió con éxito");
         })
         .catch((error) => {
           console.log(error.response);

@@ -55,7 +55,7 @@ export default {
       @media (max-width: "768px") {
         height: auto;
         grid-template-columns: 1fr;
-        grid-template-rows: 30rem 1fr;
+        grid-template-rows: 40rem 1fr;
       }
       &__picture{
         @media (max-width: "768px") {

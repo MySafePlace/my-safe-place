@@ -8,7 +8,7 @@
         ¿Necesitas ayuda? Aquí estamos para apoyarte en lo que necesites.
       </p>
       <button class="hero__content__button text-white rounded-full text-xl" @click="openChat" >
-          Empezar 
+          Empezar
       </button>
     </div>
     <div class="hero__container">
@@ -24,6 +24,12 @@
 <script>
 export default {
   name: 'HeroSection',
+  methods: {
+    openChat(){
+      const ibmChatbot = document.querySelector('.WACLauncher__Button');
+      ibmChatbot.click();
+    }
+  }
 }
 </script>
 

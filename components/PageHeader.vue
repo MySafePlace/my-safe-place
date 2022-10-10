@@ -8,7 +8,7 @@
           />
         <span class="text-3xl ml-4 font-semibold">MySafePlace</span>
         <div class="menu-btn" @click="toggleMenu">
-          <div class="menu-btn__burger" @click="toggleMenu"></div>
+          <div class="menu-btn__burger"></div>
         </div>
     </section>
     <nav class="header__nav text-2xl">
@@ -137,7 +137,7 @@ export default {
     display: flex;
   }
   position: fixed;
-  right: 10px;
+  left: 10px;
   justify-content: center;
   align-items: center;
   width: 80px;

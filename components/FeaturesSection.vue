@@ -8,17 +8,17 @@
       />
       <div class="features__data__content">
         <h1 class="features__data__content__title text-txt2 text-6xl">
-          Estadísticas de casos de violencia      
+          Estadísticas de casos de violencia
         </h1>
         <div class="features__data__content__line w-80 h-2">
         </div>
         <p class="features__data__content__text text-xl text-justify">
-          Actualmente en el país se han registrado un total de {{this.statistics.total}} casos que fueron atendidos en 
+          Actualmente en el país se han registrado un total de {{this.statistics.total}} casos que fueron atendidos en
           “My Safe Place”, de los cuales, el
-          {{((this.statistics.lima / this.statistics.total)*100).toFixed(2)}}% pertenece a Lima Metropolitana, 
-          {{((this.statistics.arequipa / this.statistics.total)*100).toFixed(2)}}% Arequipa y 
-          {{((this.statistics.others / this.statistics.total)*100).toFixed(2)}}% pertenecientes al resto de provincias del país. 
-          Asimismo, se encontró evidencia de que el 70% de las mujeres que emplearon el chatbot, 
+          {{((this.statistics.lima / this.statistics.total)*100).toFixed(2)}}% pertenece a Lima Metropolitana,
+          {{((this.statistics.arequipa / this.statistics.total)*100).toFixed(2)}}% Arequipa y
+          {{((this.statistics.others / this.statistics.total)*100).toFixed(2)}}% pertenecientes al resto de provincias del país.
+          Asimismo, se encontró evidencia de que el 70% de las mujeres que emplearon el chatbot,
           no eran conscientes del gran riesgo en el cuál se encontraban.
         </p>
       </div>
@@ -42,20 +42,22 @@
           src="../components/assets/image3.png"
       />
     </div>
-    <div v-if="formActive" class="features__form">
+    <form v-if="formActive" class="features__form">
       <label class="features__form__text text-3xl" for="name">Nombre:</label>
-      <input class="features__form__input" type="text">
+      <input v-model="fullname" class="features__form__input" type="text">
       <label class="features__form__text text-3xl" for="comment">Comentario:</label>
-      <textarea class="features__form__opinion" name="comment" id="comment" cols="30" rows="10"></textarea>
+      <textarea v-model="comment" class="features__form__opinion" name="comment" id="comment" cols="30" rows="10"></textarea>
       <div class="features__form__buttons">
         <button class="features__form__buttons__button" @click="toggleForm">Cancelar</button>
         <button class="features__form__buttons__button" @click="sumbitOpinion">Enviar</button>
       </div>
-    </div>
+    </form>
   </section>
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: 'FeaturesSection',
   methods: {
@@ -63,7 +65,20 @@ export default {
       this.formActive = !this.formActive;
     },
     sumbitOpinion(){
-      alert("Se envió con éxito");
+      const userData = {
+        fullname: this.fullname,
+        comment: this.comment,
+      };
+      axios.post("https://comentarios-tdp.herokuapp.com/api/v1/comentario", userData)
+        .then((data) =>{
+          console.log(data)
+          this.fullname= "";
+          this.comment= "";
+          alert("Se envió con éxito");
+        })
+        .catch((error) => {
+          console.log(error.response);
+       })
       this.formActive = !this.formActive;
     },
   },
@@ -76,6 +91,8 @@ export default {
         others: 12,
         total: 24,
       },
+      fullname: "",
+      comment: "",
     }
   }
 }
@@ -100,7 +117,7 @@ export default {
     &__picture{
       height: 60rem;
       @media (max-width: "768px") {
-        justify-self: center;  
+        justify-self: center;
         height: 40rem;
       }
     }
@@ -130,7 +147,7 @@ export default {
       padding: 5rem 0;
       height: 55rem;
       grid-template-columns: 1fr;
-      grid-template-rows: 30rem 1fr;  
+      grid-template-rows: 30rem 1fr;
       grid-template-areas: "Img" "Text";
     }
     &__content{
@@ -199,7 +216,9 @@ export default {
       padding: 0.6rem 1rem;
       border-radius: 1rem;
       font-size: 1.6rem;
-      
+      &:focus{
+        outline: none;
+      }
     }
     &__text{
       color: white;
@@ -210,8 +229,11 @@ export default {
     }
     &__opinion{
       font-size: 1.2rem;
-      padding: 0.6rem 1rem;
+      padding: 1rem;
       border-radius: 2.4rem;
+      &:focus{
+        outline: none;
+      }
     }
     &__buttons{
       display: flex;

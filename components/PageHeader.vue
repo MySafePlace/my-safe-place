@@ -136,6 +136,9 @@ export default {
   position: fixed;
   left: 10px;
   top: 20px;
+  @media (max-width: "540px") {
+    left: 0px;
+  }
 }
 .menu-btn {
   display: none;

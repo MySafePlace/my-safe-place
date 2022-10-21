@@ -16,8 +16,8 @@
             { text: 'Linea de Ayuda SOS', handler: function() { 
               navigator.geolocation.getCurrentPosition(function(position) {
                 console.log(position.coords.latitude, position.coords.longitude);
-                const mapsLink = `https://www.google.com/maps/search/?query=${position.coords.latitude},${position.coords.longitude}&api=1`;
-                window.open(`https://api.whatsapp.com/send?text=Hola, estoy en una emergencia. Mi ubicación es: ${mapsLink}&phone=51924533055`, '_blank');
+                const mapsLink = `\nLatitud: ${position.coords.latitude}\nLongitud: ${position.coords.longitude}`;
+                window.open(`https://api.whatsapp.com/send?phone=51924533055&text=Hola, estoy en una emergencia. Mi ubicación precisa:`, '_blank');
               })} },
             
           ]);

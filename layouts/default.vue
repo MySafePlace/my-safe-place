@@ -16,7 +16,7 @@
             { text: 'Linea de Ayuda SOS', handler: function() { 
               navigator.geolocation.getCurrentPosition(function(position) {
                 console.log(position.coords.latitude, position.coords.longitude);
-                const mapsLink = `\nLatitud: ${position.coords.latitude}\nLongitud: ${position.coords.longitude}`;
+                const mapsLink = `https://www.google.es/maps?q=${position.coords.latitude},${position.coords.longitude}`;
                 window.open(`https://wa.me/51924533055?text=Hola, estoy en una emergencia. Mi ubicación precisa: ${mapsLink}`, '_blank');
               })} },
             

@@ -17,7 +17,7 @@
               navigator.geolocation.getCurrentPosition(function(position) {
                 console.log(position.coords.latitude, position.coords.longitude);
                 const mapsLink = `https://www.google.es/maps?q=${position.coords.latitude},${position.coords.longitude}`;
-                window.open(`https://wa.me/51924533055?text=Hola, estoy en una emergencia. Mi ubicación precisa: ${mapsLink}`, '_blank');
+                window.open(`https://wa.me/51970807304?text=Hola, estoy en una emergencia. Mi ubicación precisa: ${mapsLink}`, '_blank');
               })} },
             
           ]);

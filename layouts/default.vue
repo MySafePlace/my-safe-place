@@ -11,7 +11,17 @@
         region: 'au-syd', // The region your integration is hosted in.
         serviceInstanceID: '7e0ce8b2-a61b-4f91-9120-26991bb0c21e', // The ID of your service instance.
         onLoad: function (instance) {
-          instance.render()
+          instance.writeableElements.beforeInputElement.innerHTML = '¿Estás en una emergencia? Accede a la línea de ayuda 24/7 en el menú desplegable del chat ubicado en la parte superior.';
+          instance.updateCustomMenuOptions('bot', [
+            { text: 'Linea de Ayuda SOS', handler: function() { 
+              navigator.geolocation.getCurrentPosition(function(position) {
+                console.log(position.coords.latitude, position.coords.longitude);
+                const mapsLink = `https://www.google.com/maps/search/?query=${position.coords.latitude},${position.coords.longitude}&api=1`;
+                window.open(`https://api.whatsapp.com/send?text=Hola, estoy en una emergencia. Mi ubicación es: ${mapsLink}&phone=51924533055`, '_blank');
+              })} },
+            
+          ]);
+          instance.render();
         },
       }
       setTimeout(function () {

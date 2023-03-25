@@ -7,9 +7,9 @@
     <CtaSection/>
     <script>
       window.watsonAssistantChatOptions = {
-        integrationID: 'bc3f38f3-f50f-499c-9f6c-fb813be47da2', // The ID of this integration.
-        region: 'au-syd', // The region your integration is hosted in.
-        serviceInstanceID: '7e0ce8b2-a61b-4f91-9120-26991bb0c21e', // The ID of your service instance.
+        integrationID: "518a9043-05bb-4278-b728-c9663c147b35", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "2966eee3-39a3-4360-b704-e49ca8ab7d53", // The ID of your service instance.
         onLoad: function (instance) {
           instance.writeableElements.beforeInputElement.innerHTML = '¿Estás en una emergencia? Accede a la línea de ayuda 24/7 en el menú desplegable del chat ubicado en la parte superior.';
           instance.updateCustomMenuOptions('bot', [
